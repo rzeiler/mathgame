@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mathgame/precache-manifest.95d7c6fee8da356a8c6d00f6b53c48b6.js"
+  "/mathgame/precache-manifest.9724491544d0a770858f5030525aacea.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "mathgame"});

@@ -153,8 +153,7 @@ export default {
     }
   },
   watch: {
-    isPause: function(o, n) {
-      console.log(o, n);
+    isPause: function() {
       if (this.isPause) {
         this.timeout = setInterval(() => {
           this.time++;
