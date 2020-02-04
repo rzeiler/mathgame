@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "756a8a033553bf5f5a14",
-    "url": "/mathgame/css/app.3574992a.css"
+    "revision": "963d7fc061fc82e7c73d",
+    "url": "/mathgame/css/app.c3fb6676.css"
   },
   {
-    "revision": "b99155ee1a4bb9f703809b4f906c6bb2",
+    "revision": "f13383bb95f4af759f443f86273fa49e",
     "url": "/mathgame/index.html"
   },
   {
-    "revision": "756a8a033553bf5f5a14",
-    "url": "/mathgame/js/app.fb510808.js"
+    "revision": "963d7fc061fc82e7c73d",
+    "url": "/mathgame/js/app.f8b5b275.js"
   },
   {
     "revision": "badb337c019bcf1935fb",

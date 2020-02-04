@@ -2,8 +2,8 @@
 
 .paper
     font-family 'Shadows Into Light', cursive
-    font-size 24px  !important
-    line-height 24px !important
+    font-size 40px  !important
+    line-height 54px !important
     width 76vw
     height 96vh
     margin  0 
@@ -12,8 +12,8 @@
     color  #444 
     line-height  20px 
     background  #fff 
-    background  linear-gradient(to bottom, #c3dce8 0px, #ffffff 1px) 0 5vh 
-    background-size  100% 20px 
+    background  linear-gradient(to bottom, #c3dce8 0px, #ffffff 1px)
+    background-size  100% 50px 
     border-radius  3px 
     box-shadow  0 1px 2px rgba(0,0,0,0.07) 
     &::after
@@ -40,6 +40,13 @@
         opacity .5
         border-bottom-style none
         border-top-style none
+
+    @media (max-width: 900px)
+        font-size 24px  !important
+        line-height 30px !important
+
+
+    
     .playground
         display flex
         flex-wrap wrap
@@ -54,11 +61,14 @@
             color #576280
             h1
                 small
+                    text-shadow 2px 3px #e036364a
+                    color #383f52
                     display block
                     padding 5px
                     &::after
                         content 'Level'
                         font-size 70%
+                        margin 20px
 
         .results
             margin-top 2vh
@@ -94,3 +104,4 @@
             &>div
                 display block
                 width 50%
+    

@@ -55,7 +55,7 @@ export default {
         this.animation = "tada";
         this.activeColor = "";
         this.steps++;
-        if (this.steps > 1) {
+        if (this.steps > 9) {
           this.level += 1;
           this.steps = 0;
         }
