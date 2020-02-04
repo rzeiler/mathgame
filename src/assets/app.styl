@@ -44,8 +44,6 @@
     @media (max-width: 900px)
         font-size 24px  !important
         line-height 30px !important
-
-
     
     .playground
         display flex
@@ -105,3 +103,26 @@
                 display block
                 width 50%
     
+    #posted
+        width 20vw
+        height 20vh
+        left 10vw
+        top 10vh
+        padding 2vw
+        border-bottom-left-radius 20vw 5vw
+        position absolute
+        overflow hidden
+        transform rotate(-19deg)
+        box-shadow -9px 10px 31px 6px gray
+        background-color #fffa94
+        font-size 50%
+        line-height 100%
+         
+        .command
+            font-weight bolder
+            font-size 150%
+            cursor pointer
+
+            &::before
+                content '>'
+         

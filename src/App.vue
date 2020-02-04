@@ -3,11 +3,14 @@
     <div class="playground">
       <div>
         <div class="pull-right info">
-          <h1>Math Game! <small v-html="level" /></h1>
+          <h1>
+            Math Game!
+            <small v-html="level" />
+          </h1>
           <p>Find the right result.</p>
         </div>
       </div>
-      <div v-if="isVisible" class="results">
+      <div v-if="isPause" class="results">
         <div :class="animation" :style="{ color: activeColor}" class="animated task">
           {{formular}} =
           <span>{{sResult}}</span>
@@ -21,6 +24,16 @@
         >{{r.result}} = x</div>
       </div>
     </div>
+    <div id="posted">
+      <div v-on:click="pause()">
+        <div v-if="isPause" class="command">Pause</div>
+        <div v-else class="command animated pulse">Start</div>
+      </div>
+
+      <p class="time">Besttime: {{besttime}}</p>
+      <p class="time">Time: {{time}}</p>
+      <div v-on:click="getChallenge()" class="command">New Game*</div>
+    </div>
   </div>
 </template>
 
@@ -30,7 +43,6 @@ export default {
   name: "math",
   data: function() {
     return {
-      isVisible: false,
       key: 0,
       formular: "0+0",
       sResult: "x",
@@ -38,7 +50,11 @@ export default {
       steps: 0,
       level: 1,
       animation: "",
-      activeColor: ""
+      activeColor: "",
+      isPause: false,
+      besttime: "",
+      time: 0,
+      timeout: null
     };
   },
   created: function() {
@@ -46,7 +62,9 @@ export default {
     this.getChallenge();
   },
   methods: {
-    start: function() {},
+    pause: function() {
+      this.isPause = !this.isPause;
+    },
     click: function(item) {
       this.sResult = item.result;
       this.animation = "shake";
@@ -55,6 +73,7 @@ export default {
         this.animation = "tada";
         this.activeColor = "";
         this.steps++;
+        this.besttime = this.time;
         if (this.steps > 9) {
           this.level += 1;
           this.steps = 0;
@@ -77,7 +96,7 @@ export default {
     },
 
     getChallenge: function() {
-      this.isVisible = false;
+      this.isPause = false;
       this.sResult = "x";
       this.results = [];
       var sign = ["+", "-", "*"];
@@ -129,17 +148,20 @@ export default {
         let randomPos = Math.floor(Math.random() * 5);
         item.order = randomPos;
       });
-
-      this.isVisible = true;
-    },
-
-    checkLevel: function() {
-      var level = this.level,
-        step = this.levelStep;
-      if (this.successful + 1 >= step * level) {
-        level = this.level + 1;
+      this.time = 0;
+      this.isPause = true;
+    }
+  },
+  watch: {
+    isPause: function(o, n) {
+      console.log(o, n);
+      if (this.isPause) {
+        this.timeout = setInterval(() => {
+          this.time++;
+        }, 1000);
+      } else {
+        clearInterval(this.timeout);
       }
-      return level;
     }
   }
 };
@@ -221,6 +243,28 @@ export default {
   80% {
     transform: translate3d(10px, 0, 0);
   }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.animated.pulse {
+  animation-iteration-count: infinite;
+  animation-name: pulse;
 }
 
 .animated.shake {
