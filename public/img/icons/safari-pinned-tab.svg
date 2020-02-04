@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512mm"
+   height="512mm"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="safari-pinned-tab.svg"
+   inkscape:export-filename="D:\Workspace\vuejs\math\src\assets\logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="1164.357"
+     inkscape:cy="1060.949"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     objecttolerance="50"
+     guidetolerance="50" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,215)">
+    <rect
+       style="opacity:1;fill:#dbdbde;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.00019729;paint-order:markers stroke fill"
+       id="rect10"
+       width="420.14771"
+       height="405.71515"
+       x="40.624969"
+       y="-160.03088"
+       ry="12.060659" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#393939;stroke-width:40;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect12"
+       width="340.93451"
+       height="168.57739"
+       x="85.422615"
+       y="-121.79761"
+       ry="12.06066"
+       rx="0" />
+    <rect
+       style="opacity:1;fill:#a5b8a2;fill-opacity:1;stroke:none;stroke-width:23.46434021;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect822"
+       width="316.29333"
+       height="143.75281"
+       x="97.769386"
+       y="-109.53468"
+       ry="11.353807" />
+    <rect
+       style="opacity:1;fill:#90530e;fill-opacity:1;stroke:none;stroke-width:45.96133804;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect824"
+       width="169.6714"
+       height="120.19643"
+       x="67.302017"
+       y="98.405952"
+       ry="12.06066" />
+    <rect
+       style="opacity:1;fill:#c06f13;fill-opacity:1;stroke:none;stroke-width:42.1774826;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect824-2"
+       width="169.6714"
+       height="101.22029"
+       x="67.302025"
+       y="98.405952"
+       ry="10.156571" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#393939;stroke-width:24.09902763;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.48247423;paint-order:normal"
+       id="rect12-7"
+       width="316.85251"
+       height="143.46167"
+       x="97.489799"
+       y="-109.81427"
+       ry="10.263788"
+       rx="0" />
+    <rect
+       style="opacity:1;fill:#3e5c4a;fill-opacity:1;stroke:none;stroke-width:45.96133804;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect824-0"
+       width="169.67142"
+       height="120.19643"
+       x="270.63275"
+       y="98.456177"
+       ry="12.06066" />
+    <rect
+       style="opacity:1;fill:#527962;fill-opacity:1;stroke:none;stroke-width:42.1774826;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect824-2-2"
+       width="169.67142"
+       height="101.22029"
+       x="270.63275"
+       y="98.456177"
+       ry="10.156571" />
+  </g>
+</svg>
