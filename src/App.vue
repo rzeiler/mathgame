@@ -3,7 +3,7 @@
     <div class="playground">
       <div>
         <div class="pull-right info">
-          <h1>Math Game!</h1>
+          <h1>Math Game! <small v-html="level" /></h1>
           <p>Find the right result.</p>
         </div>
       </div>
@@ -56,8 +56,7 @@ export default {
         this.activeColor = "";
         this.steps++;
         if (this.steps > 1) {
-          this.level++;
-          console.log(this.level);
+          this.level += 1;
           this.steps = 0;
         }
         this.getChallenge();

@@ -2,7 +2,8 @@
 
 .paper
     font-family 'Shadows Into Light', cursive
-    font-size 24px
+    font-size 24px  !important
+    line-height 24px !important
     width 76vw
     height 96vh
     margin  0 
@@ -51,11 +52,17 @@
             transform-origin center center
             transform rotate(10deg)
             color #576280
+            h1
+                small
+                    display block
+                    padding 5px
+                    &::after
+                        content 'Level'
+                        font-size 70%
 
         .results
             margin-top 2vh
             text-align right
-            
             display flex
             flex-wrap wrap
             max-width 400px
@@ -64,13 +71,14 @@
                 flex 1 100%
                 padding 2vh 0
             .task
-                font-size: 180%
+                font-size 180%
+                font-weight bolder
+                color #000
             .result
-                font-size: 150%
+                font-size 150%
                 cursor pointer
-                span
-                    &:hover
-                        font-weight bolder
+                &:hover
+                    font-weight bolder
             .font-red
                 color #ff0000
          

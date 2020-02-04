@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/brainwash/precache-manifest.7a0885b68f90f59089a9fcd4cebd3d71.js"
+  "/mathgame/precache-manifest.62a62a47c8bfa13c0bf4540ca6fd7f71.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "brainwash"});
+workbox.core.setCacheNameDetails({prefix: "mathgame"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
